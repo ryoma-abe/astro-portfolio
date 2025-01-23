@@ -1,22 +1,23 @@
 import React, { useState, useEffect } from 'react'
 import moment from 'moment-timezone'
+import 'moment/locale/ja'
 
-const Timezone = ({ timezone }: any) => {
+const Timezone = () => {
   const [dateTime, setDateTime] = useState('')
 
   useEffect(() => {
+    moment.locale('ja')
     const interval = setInterval(() => {
-      const now = moment().tz(timezone)
-      setDateTime(now.format('dddd, DD MMMM YYYY [a] h:mm:ss A'))
+      const now = moment().tz('Asia/Tokyo') // タイムゾーンを東京に
+      setDateTime(now.format('YYYY年 MMMM Do (dddd) HH:mm:ss'))
     }, 1000)
-
     return () => clearInterval(interval)
-  }, [timezone])
+  }, [])
 
   return (
     <div>
       <p>{dateTime}</p>
-      <p className="text-sm text-gray-500">🇨🇴 Bogotá D.C, Colombia 🇨🇴</p>
+      <p className="text-sm text-gray-500">🇯🇵 東京, 日本 🇯🇵</p>
     </div>
   )
 }

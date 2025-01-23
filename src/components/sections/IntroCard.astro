@@ -2,7 +2,7 @@
 import Card from '../Card.astro'
 import { Button } from '../ui/button'
 import { LINKS } from '../../lib/constants'
-import { Linkedin, Github, Mail } from 'lucide-react'
+import { Linkedin, Github, Mail, Twitter } from 'lucide-react'
 ---
 
 <Card colSpan="md:col-span-3" rowSpan="md:row-span-4">
@@ -10,12 +10,14 @@ import { Linkedin, Github, Mail } from 'lucide-react'
     <div class="flex flex-col justify-between gap-4 md:max-h-[300px]">
       <div class="flex h-full flex-col">
         <h6 class="m-0 text-sm font-light text-gray-500">welcome</h6>
-        <p class="m-0 text-xl font-light">
-          Hi, I'm <b class="font-bold">Andrés Camilo Plaza</b>, a software
-          developer, systems engineer and tattoo artist with strong focus on the
-          user experience, animations and micro interactions. I love to create
-          beautiful and functional interfaces, I am passionate about technology
-          and I am always looking for new challenges.
+        <p class="m-0 text-base font-light">
+          初めまして。
+          <b class="font-bold">りょう</b>です。<br />
+          モダンな技術を活用したECサイト開発に情熱を注ぐフリーランスエンジニアです。<br
+          />
+          Shopifyのカスタマイズから、WordPressのオリジナルテーマ開発まで、クライアントのビジョンを実現する開発を行っています。<br
+          />
+          最新のWeb技術とデザインで、ビジネスの成長をサポートします。
         </p>
       </div>
       <div class="flex gap-4">
@@ -25,10 +27,16 @@ import { Linkedin, Github, Mail } from 'lucide-react'
             <span class="sr-only">GitHub Profile</span>
           </Button>
         </a>
-        <a href={LINKS.linkedin} aria-label="linkeding profile" target="_blank">
-          <Button aria-label="linkedin profile">
-            <Linkedin />
-            <span class="sr-only">Linkedin Profile</span>
+
+        <a href={LINKS.x} aria-label="X profile" target="_blank">
+          <Button>
+            <svg width="24" height="24" viewBox="0 0 24 24">
+              <path
+                fill="currentColor"
+                d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"
+              ></path>
+            </svg>
+            <span class="sr-only">X Profile</span>
           </Button>
         </a>
         <a href={LINKS.mail} aria-label="mail profile" target="_blank">
