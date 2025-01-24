@@ -6,12 +6,10 @@ import Card from '../components/Card.astro'
 import TimeZoneCard from '../components/sections/TimeZoneCard.astro'
 import ContactsCard from '../components/sections/ContactsCard.astro'
 import Now from '../components/sections/Now.astro'
-import CVCard from '../components/sections/CVCard.astro'
+import TechnologyStack from '../components/sections/TechnologyStack.astro'
 import ExperienceCard from '../components/sections/ExperienceCard.astro'
-import TattooCard from '../components/sections/TattooCard.astro'
+import BlogCard from '../components/sections/BlogCard.astro'
 import StudyCard from '../components/sections/StudyCard.astro'
-//
-import { motion, AnimatePresence } from 'framer-motion'
 ---
 
 <script>
@@ -51,14 +49,9 @@ import { motion, AnimatePresence } from 'framer-motion'
   >
     <IntroCard />
     <AboutMe />
-    <CVCard />
+    <TechnologyStack />
     <Now />
-    <Card
-      colSpan="md:col-span-1"
-      rowSpan="md:row-span-2"
-      title="Portfolio & Projects"
-      href="/portfolio"
-    />
+    <BlogCard />
     <TimeZoneCard />
     <ContactsCard />
     <ExperienceCard />

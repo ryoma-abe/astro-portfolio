@@ -20,19 +20,33 @@ import { EXPERIENCE } from '../lib/constants'
       <ul>
         {
           EXPERIENCE.map((entry) => (
-            <li class="animate mt-4 border-b border-black/10 py-8 first-of-type:mt-0 first-of-type:pt-0 last-of-type:border-none dark:border-white/25">
-              <div class="mb-4 text-sm uppercase">
+            <li class="animate mt-6 border-b border-black/10 py-6 first:mt-0 first:pt-0 last:border-none dark:border-white/25">
+              {/* 日付 */}
+              <div class="mb-2 text-xs uppercase tracking-wide text-gray-600 dark:text-gray-400">
                 {entry.start} - {entry.end}
               </div>
+
+              {/* プロジェクト名 */}
               <a
+                target="_blank"
                 href={entry.link ?? ''}
-                class={`font-semibold ${entry?.link ? 'text-primary' : 'text-foreground'}`}
+                class={`mb-2 block text-lg font-bold ${
+                  entry?.link
+                    ? 'text-primary hover:underline'
+                    : 'text-foreground'
+                }`}
               >
-                {entry.company}
+                {entry.project}
               </a>
-              <div class="text-sm font-semibold">{entry.position}</div>
-              <article class="prose dark:prose-invert">
-                {entry.tasks.map((i) => (
+
+              {/* 役職 */}
+              <div class="mb-2 text-sm font-medium text-gray-800 dark:text-gray-200">
+                {entry.position}
+              </div>
+
+              {/* 概要 */}
+              <article class="prose dark:prose-invert text-sm">
+                {entry.description.map((i) => (
                   <>{i}</>
                 ))}
               </article>

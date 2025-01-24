@@ -13,6 +13,7 @@ export const LINKS = {
   instagram: 'https://www.instagram.com/caj_ink/',
   x: 'https://x.com/ryoo_black',
   discord: 'https://discordapp.com/users/163300027618295808',
+  blog: 'https://www.ryoma.online/',
 }
 
 export const SITE: Site = {
@@ -72,32 +73,13 @@ export const STUDIES = [
 
 export const EXPERIENCE = [
   {
-    company: 'フリーランス',
-    location: '北海道音更町',
-    position: 'EC/Webエンジニア',
-    start: '2022年',
-    end: '現在',
-    link: '#',
-    tasks: [
-      'Shopifyカスタマイズ案件 30件以上',
-      'Shopify新規構築案件 20件以上',
-      'EC構築(サブスク、会員制、越境EC)',
-      '侍エンジニア講師',
-      'WordPress制作・カスタマイズ',
-      'Web制作・デザイン',
-    ],
-  },
-  {
-    company: '陸上自衛隊',
-    location: '北海道',
-    position: '格闘指導官',
-    start: '2011年',
-    end: '2022年',
-    link: '#',
-    tasks: [
-      '11年間勤務',
-      'リーダーシップ・チームワークを習得',
-      '規律・時間管理の重要性を学ぶ',
+    project: 'SNORE512 様',
+    position: 'Shopifyエンジニア',
+    start: '2024/11',
+    end: '2024/12',
+    link: 'https://snore512.dog/',
+    description: [
+      'フレンチブルドッグのコテツくんをモチーフにしたアパレルブランド「SNORE512」のECサイトを構築。オーガニックコットンを使用したアパレル製品やグッズを展開するブランドサイトとして実装しました。Printfulとの連携機能を使用し、商品の在庫管理と配送を実装しています。',
     ],
   },
 ]

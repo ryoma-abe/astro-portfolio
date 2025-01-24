@@ -10,9 +10,10 @@ interface Props {
   rowSpan?: string
   href?: string
   colorText?: string
+  target?: string
 }
 
-const { title, body, colSpan, rowSpan, href, colorText } = Astro.props
+const { title, body, colSpan, rowSpan, href, colorText, target} = Astro.props
 ---
 
 <ShadcnCard
@@ -22,7 +23,11 @@ const { title, body, colSpan, rowSpan, href, colorText } = Astro.props
 >
   {
     href ? (
-      <a href={href} class={`block h-full w-full ${colorText || ' '}`}>
+      <a
+        href={href}
+        class={`block h-full w-full ${colorText || ' '}`}
+        target={target}
+      >
         <SquareArrowOutUpRight
           className="group-hover:text-primary position absolute right-6 "
           size={20}
