@@ -95,4 +95,3 @@ Contributions are welcome! If you have ideas or improvements, please open an iss
 This project is licensed under the [MIT License](LICENSE).
 
 ---
-
