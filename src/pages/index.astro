@@ -10,6 +10,7 @@ import TechnologyStack from '../components/sections/TechnologyStack.astro'
 import ExperienceCard from '../components/sections/ExperienceCard.astro'
 import BlogCard from '../components/sections/BlogCard.astro'
 import StudyCard from '../components/sections/StudyCard.astro'
+import { SITE } from '../lib/constants'
 ---
 
 <script>
@@ -35,10 +36,7 @@ import StudyCard from '../components/sections/StudyCard.astro'
   timeline(sequence as TimelineDefinition)
 </script>
 
-<BaseLayout
-  title="Andrés Plaza - Full Stack Developer"
-  description="Andrés Plaza - Full Stack Developer - Portfolio, Projects, CV, About Me, Contact, Timezone, Now, Experience, Tattoo, Study"
->
+<BaseLayout title={SITE.TITLE} description={SITE.DESCRIPTION}>
   <div
     slot="loader"
     class="loader bg-darkslate-700 fixed bottom-0 left-0 right-0 top-0 z-50 flex h-screen w-screen items-center justify-center text-3xl font-black uppercase text-neutral-50"
