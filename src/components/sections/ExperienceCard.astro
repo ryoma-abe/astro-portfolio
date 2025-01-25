@@ -1,13 +1,13 @@
 ---
 import Card from '../Card.astro'
 import { Button } from '../ui/button'
-import { SAMPLES } from '../../lib/constants'
+import { WORKS } from '../../lib/constants'
 ---
 
-<Card colSpan="md:col-span-1" rowSpan="md:row-span-2" title="SAMPLES">
+<Card colSpan="md:col-span-1" rowSpan="md:row-span-2" title="WORKS">
   <div class="mt-2 space-y-4">
     {
-      SAMPLES.slice(0, 3).map((exp) => (
+      WORKS.slice(0, 3).map((exp) => (
         <div>
           <a
             class="text-sm text-primary"
@@ -16,7 +16,9 @@ import { SAMPLES } from '../../lib/constants'
           >
             {exp.project}
           </a>
-          <p class="text-sm text-gray-600">{exp.description}</p>
+          <p class="text-sm text-gray-600">
+            {exp.start} - {exp.end}
+          </p>
         </div>
       ))
     }

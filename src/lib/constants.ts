@@ -58,7 +58,17 @@ export const STUDIES = [
   },
 ]
 
-export const SAMPLES = [
+export const WORKS = [
+  {
+    project: 'SNORE512 様',
+    position: 'Shopifyエンジニア',
+    start: '2024/11',
+    end: '2024/12',
+    link: 'https://snore512.dog/',
+    description: [
+      'フレンチブルドッグのコテツくんをモチーフにしたアパレルブランド「SNORE512」のECサイトを構築。オーガニックコットンを使用したアパレル製品やグッズを展開するブランドサイトとして実装しました。Printfulとの連携機能を使用し、商品の在庫管理と配送を実装しています。',
+    ],
+  },
   {
     project: 'SNORE512 様',
     position: 'Shopifyエンジニア',
