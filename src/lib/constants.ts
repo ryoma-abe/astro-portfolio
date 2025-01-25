@@ -8,11 +8,9 @@ export const loaderAnimation = [
 
 export const LINKS = {
   github: 'https://github.com/ryoma-abe',
-  linkedin: 'https://www.linkedin.com/in/ryoma-abe/',
   mail: 'mailto:webchaleur@gmail.com',
-  instagram: 'https://www.instagram.com/caj_ink/',
+  instagram: 'https://www.instagram.com/ryo___book/',
   x: 'https://x.com/ryoo_black',
-  discord: 'https://discordapp.com/users/163300027618295808',
   blog: 'https://www.ryoma.online/',
 }
 
@@ -26,11 +24,6 @@ export const SITE: Site = {
 export const WORK: Page = {
   TITLE: '実績',
   DESCRIPTION: 'これまでの制作実績一覧です。',
-}
-
-export const BLOG: Page = {
-  TITLE: 'ブログ',
-  DESCRIPTION: '技術ブログ・お知らせなど。',
 }
 
 export const PROJECTS: Page = {
@@ -54,24 +47,18 @@ export const STUDIES = [
   {
     title: 'Shopifyエンジニア',
     institution: 'デイトラ Shopifyコース',
-    link: 'https://samurai-engineer.com/',
+    link: 'https://www.daily-trial.com/shopify',
     date: '2022年2月',
   },
   {
     title: 'フロントエンドエンジニア',
-    institution: 'デイトラ アドバンスコース',
-    link: 'https://samurai-engineer.com/',
+    institution: 'デイトラ Shopifyアドバンスコース',
+    link: 'https://www.daily-trial.com/shopify_advanced',
     date: '2022年4月',
-  },
-  {
-    title: 'WordPress開発',
-    institution: '独学',
-    link: '#',
-    date: '2022年',
   },
 ]
 
-export const EXPERIENCE = [
+export const SAMPLES = [
   {
     project: 'SNORE512 様',
     position: 'Shopifyエンジニア',
@@ -83,31 +70,3 @@ export const EXPERIENCE = [
     ],
   },
 ]
-
-export const SERVICES = [
-  {
-    title: 'Shopify構築・カスタマイズ',
-    price: '20万円〜',
-    duration: '2週間〜',
-    description: '要件定義からデザイン、構築まで一貫して対応します。',
-  },
-  {
-    title: 'WordPress制作',
-    price: '15万円〜',
-    duration: '2週間〜',
-    description: 'オリジナルテーマの作成やカスタマイズを行います。',
-  },
-  {
-    title: 'Web制作・デザイン',
-    price: '30万円〜',
-    duration: '3週間〜',
-    description: 'コーポレートサイトやランディングページの制作を承ります。',
-  },
-]
-
-export const AVAILABILITY = {
-  hours: '7:00 - 21:00',
-  days: '土日対応可能',
-  response: '連絡は1時間以内に返信',
-  location: '北海道音更町 (リモート対応)',
-}

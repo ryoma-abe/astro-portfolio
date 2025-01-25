@@ -4,7 +4,7 @@ import BaseLayout from '../layouts/BaseLayout.astro'
 import TopLayout from '../layouts/TopLayout.astro'
 import BottomLayout from '../layouts/BottomLayout.astro'
 
-import { EXPERIENCE } from '../lib/constants'
+import { SAMPLES } from '../lib/constants'
 ---
 
 <BaseLayout title={WORK.TITLE} description={WORK.DESCRIPTION}>
@@ -19,7 +19,7 @@ import { EXPERIENCE } from '../lib/constants'
     <BottomLayout>
       <ul>
         {
-          EXPERIENCE.map((entry) => (
+          SAMPLES.map((entry) => (
             <li class="animate mt-6 border-b border-black/10 py-6 first:mt-0 first:pt-0 last:border-none dark:border-white/25">
               {/* 日付 */}
               <div class="mb-2 text-xs uppercase tracking-wide text-gray-600 dark:text-gray-400">
